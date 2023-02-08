@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>web dev</title>
+</head>
+<body>
+    <div class="login-screen">
+   <div class="left">
+<div class="icon-left"></div>
+   </div>
+   <div class="right">
+    <h3>Member Register</h3>
+    <form action="process.php" method="post">
+        <input type="text" name="fname" id="fname" placeholder="Enter First Name">
+        <input type="text" name="lname" id="lname" placeholder="Enter Last Name">
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+        <input type="password" name="password" id="password" placeholder="Enter Password">
+        <button>Register</button>   
+    </form>
+    <p>Lorem ipsum dolor sit</p>
+   </div>
+    </div>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+
+  $sql = "INSERT INTO users (name, email)
+  VALUES ('$name', '$email')";
+
+  if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+}
+?>
+
+   
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+ * ,*::before *::after{
+box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+   margin: 0;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 400;
+}
+
+.logo{
+    border-radius: 80% / 80%;
+ 
+  overflow: hidden; 
+    margin-top: 4px;
+    margin-left: 40px;
+   
+    width: 70%;
+
+}
+.project{
+    margin-left: 0%;
+    padding: 20px 20px 20px 20px;
+    color: rgb(15, 1, 1);
+    background-color: #cb9b51;
+   
+  }
+header{
+    position: relative;
+    background-color: #cb9b51;
+    width: 100%;
+    z-index: 999%;
+   
+}
+nav{
+  position: relative;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: rgb(0, 0, 39);
+  display: none;
+  transform: scale(0,1);
+  transform-origin: top;
+  opacity: 0;
+  transition: transform 400ms ease-in-out;
+  transition: opacity 150ms ease-in-out,
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;     
+} 
+nav ul li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+nav ul li a{
+    color: white;
+ text-decoration: none;
+ font-size: 1.2rem;
+ text-transform: uppercase;   
+}
+nav ul li a:hover{
+  color: red;
+}
+.nav-toggle:checked ~ nav{
+    display: block;
+    display: block;
+    transform: scale(1,1);
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom: 7px;
+
+}
+.nav-toggle-label span::after{
+    top: 7px;
+    
+} 
+.submenu{
+    display: none;
+    position: relative;
+}
+.menu ul li:hover .submenu{
+    display: block;
+    background: red;
+    position: relative;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu ul li:hover .submenu ul{
+    display: block;
+    margin:10px;
+}
+.menu ul li:hover .submenu ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px dotted #fff;
+    text-align: left;
+}
+
+.menu ul li:hover .submenu ul li:last-child {
+border-bottom: none;
+}
+.menu ul li:hover .submenu ul li a:hover{
+    color:red;
+}
+.address{
+    display: none;
+}
+.first-div{
+    color: white;
+}
+h2{
+    color:white;
+    font-size: 30px;
+    margin-left: 30px;
+    align-items: center;
+}
+span{
+    color: #cb9b51;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: #cb9b51;
+}
+.content-contact{
+    color: white;
+}
+@media only screen and (min-width: 1000px) {
+.first-div{
+    border: 2px solid #cb9b51;
+    width: 50%;
+    border-radius: 25px;
+}
+.contact{
+    border: 2px solid #cb9b51;
+    margin-left: 760px;
+    color: white;
+    width: 33%;
+    margin-top: -330px;
+    border-radius: 30px;
+    height: 50vh;
+    align-items: center;
+    align-content: center;
+}
+.content-contact{
+    color:white;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+}  
