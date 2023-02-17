@@ -14,7 +14,9 @@ body{
    font-family: 'Times New Roman', Times, serif;
    font-weight: 400;
 }
-
+.sidebar{
+    display: none;
+}
 .logo{
     border-radius: 80% / 80%;
  
@@ -168,6 +170,73 @@ a:hover{
 }
 .content-contact{
     color: white;
+}
+
+/* Second Screen */
+@media only screen and (min-width: 768px) {
+    .nav-toggle-label{
+        display: none;
+    }
+}
+.sidebar {
+    display: block;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+.sidebar a {
+
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #cb9b51;
+    display: block;
+    margin-left: 10px;
+  }
+    .main-content{
+        margin-left: 200px;
+        padding: 16px;
+      }
+      
+nav{
+    display: none;
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cb9b51; 
+    color: #fff;
+    padding: 0px;
+    margin-top: -19px;
+}
+.project a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 28px;
+}
+.project a:hover{
+    background-color: #555;
+}
+
+.logo{
+    display: none;
+    border-radius: 80% / 80%;
+ 
+  overflow: hidden; 
+    margin-top: 4px;
+    margin-left: 40px;
+   
+    width: 70%;
+
 }
 @media only screen and (min-width: 1000px) {
 .first-div{
