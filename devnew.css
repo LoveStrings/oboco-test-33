@@ -487,6 +487,8 @@ h2{
     left:0;
     
 }
+.sidedar{ display: none;
+}
 /* Second Screen */
 @media only screen and (min-width: 768px) {
     .nav-toggle-label{
