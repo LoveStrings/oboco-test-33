@@ -14,23 +14,32 @@ body{
    font-family: 'Times New Roman', Times, serif;
    font-weight: 400;
 }
-
+P{
+    color: white;
+}
 .logo{
     border-radius: 80% / 80%;
  
   overflow: hidden; 
     margin-top: 4px;
-    margin-left: 40px;
+    margin-left: 60px;
    
     width: 70%;
 
 }
-.sidebar{
-    display: none;
-}
 header{
     position: relative;
-    background-color: #cb9b51;
+   /* background-image: linear-gradient(
+        to right,
+        #ff9b05 75%,
+               #cb9b51 22%, 
+    
+    
+        #f6e27a 5%,
+        #cb9b51 78%,
+        #dd9104 100%
+        );*/
+        background-color: #cb9b51;
     image-resolution: 100px;
     width: 100%;
     z-index: 999%;
@@ -50,16 +59,6 @@ nav{
   transition: opacity 150ms ease-in-out,
 
 }
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .image-gallery img {
-    width: 25%;
-    margin: 10px;
-  }
 nav ul{
     margin: 0;
     padding: 0;
@@ -123,10 +122,7 @@ nav ul li a:hover{
     bottom: 7px;
 
 }
-.nav-toggle-label span::after{
-    top: 7px;
-    
-} 
+
 .submenu{
     display: none;
     position: relative;
@@ -158,28 +154,44 @@ border-bottom: none;
 .menu ul li:hover .submenu ul li a:hover{
     color:black;
 }
+.sidebar{
+    display: none;
+}
 .address{
     display: none;
 }
 .our-mission{
-    color: #fff;
-    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: justify;
     font-weight: bolder;
-    text-shadow: #cb9b51;
+    text-shadow: #dd9104;
 }
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery img {
+    width: 25%;
+    margin: 10px;
+  }
 button {
-    background-color: rgb(12, 12, 12);
-    color: #fff;
-    border: 2px solid  #cb9b51;
+    background-color: #0a0a0a;
+    color: rgb(255, 252, 252);
+    border-bottom:black;
+    width: max-content;
+
+    border-style:groove;
   }
   
   button:hover {
-    background-color:  #cb9b51;
+    background-color: #f7f5f3;
   }
+  
   .project{
     margin-left: 0%;
     padding: 20px 20px 20px 20px;
-    color: rgb(15, 1, 1);
+    color: rgb(243, 234, 234);
     background-color: #cb9b51;
    
   }
@@ -188,7 +200,6 @@ button {
     box-sizing: 2px;
     border-radius: 2px;
 }
-
 h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
@@ -197,14 +208,19 @@ h2{
     font-size: 35px;
 }
 .containers {
-    border: 1px solid  #cb9b51;
+    border: 2px solid #cb9b51;
     color: aliceblue;
     width: 95%;
     margin: 0 auto;
     font-weight: 40px;
-    padding: 5px 10px 10px 2px;
+    padding: 10px 20px 20px 15px;
+    text-align: justify;
   }
-  
+  .statement{
+    border: 6px solid #cb9b51;
+    padding: 10px 20px 20px 15px;
+    text-align: justify;
+  }
   .more {
     display: none;
   }
@@ -218,13 +234,17 @@ h2{
 .first-link{
     border: 4px solid white;
     margin-left: 270px;
-
-     background-image: linear-gradient(
+background-color: #cb9b51;
+     /*background-image: linear-gradient(
         to right,
-        
-               #cb9b51 100%, 
-      
-        );
+        #ff9b05 0,
+               #cb9b51 22%, 
+        #f6cf7a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #dd9104 100%
+        );*/
     color: white;
     font-size: 20px;
     border-radius: 20px;
@@ -268,11 +288,17 @@ h2{
 .another-link{
     border-radius: 10px;
     padding: 5px 7px;
-    background-image: linear-gradient(
+    background-color: #cb9b51;
+    /*background-image: linear-gradient(
         to right,
-               #cb9b51 100%, 
-        
-        );
+        #ff9b05 0,
+               #cb9b51 22%, 
+        #f6cf7a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #dd9104 100%
+        );*/
     margin-left: 30px;
     margin-top: 90px;
     font-size: 23px;
@@ -280,6 +306,8 @@ h2{
     color: rgb(0, 0, 0);
     font-weight: bolder;
 }
+  
+ 
 .linking{
     margin-left: 210px;
     margin-top: -50px;
@@ -308,11 +336,10 @@ h2{
 }
 .flash-cards3{
     border-radius: 50px;
-    height: fit-content;
+    height: 49vh;
     border: 7px solid #cb9b51;
-    width: 100%;
-    margin-left: 5px;
-    padding: 25px:
+    width: 70%;
+    margin-left: 50px;
 }
 .wordstwos{
     background-color: darkgrey;
@@ -334,7 +361,8 @@ h2{
 .another-links{
     border-radius: 10px;
     padding: 5px 7px;
-    background-image: linear-gradient(
+    background-color: #cb9b51;
+    /*background-image: linear-gradient(
         to right,
         #ff9b05 0,
                #cb9b51 22%, 
@@ -343,7 +371,7 @@ h2{
         #f6e27a 55%,
         #cb9b51 78%,
         #dd9104 100%
-        );
+        );*/
     margin-left: 30px;
     margin-top: 90px;
     font-size: 25px;
@@ -358,7 +386,8 @@ h2{
     margin-left: 180px;
 }
 .buttontee{
-    background-image: linear-gradient(
+    background-color: #cb9b51;
+    /*background-image: linear-gradient(
         to right,
         #ff9b05 0,
                #cb9b51 22%, 
@@ -367,7 +396,7 @@ h2{
         #f6e27a 55%,
         #cb9b51 78%,
         #dd9104 100%
-        );
+        );*/
     color: rgb(0, 0, 0);
     text-decoration: none;
     border: 2px solid transparent;
@@ -393,6 +422,35 @@ h2{
     font-size: larger;
 
 }
+
+.erosion a{
+    color: #fff;
+
+}
+.container{
+    position: relative;
+	border: 0px solid #cb9b51;
+    width: 350px;
+    background-color: #cb9b51;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+
+    border-radius: 11px 2px 3px 10px;
+	
+}
+.swiper{
+    position: relative;
+    width: 350px;
+   height: 50vh;
+   border-radius: 11px 2px 3px 10px;
+}
+.swiper-slide img{
+    position:relative;
+    width:350px;
+    border-radius: 11px 30px 78px 20px;
+    height: 50vh;
+}
 .first-images{
     width: 100px;
     margin-left: 10px;
@@ -417,7 +475,7 @@ h2{
 }
 .my-images{
     width: 110px;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 .writtings{
     color: white; 
@@ -426,9 +484,7 @@ h2{
 }
 .groups{
     color: white;
-    margin-left: 10px;
-    border:4px solid #cb9b51;
-    padding: 10px;
+    margin-left: 20px;
 }
 .happening{
     color:#cb9b51; 
@@ -487,8 +543,7 @@ h2{
     left:0;
     
 }
-.sidedar{ display: none;
-}
+
 /* Second Screen */
 @media only screen and (min-width: 768px) {
     .nav-toggle-label{
@@ -1113,7 +1168,4 @@ margin:10px;
         color: blanchedalmond;
         background-color:black;
         left:0;*/
-    }
-  
-
-}
+    
