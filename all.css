@@ -18,7 +18,7 @@ body{
 .image-gallery {
     margin-left: 5%;
     display: flex;
-    flex-wrap:;
+    flex-wrap:wrap;
     color: #fff;
    
   }
